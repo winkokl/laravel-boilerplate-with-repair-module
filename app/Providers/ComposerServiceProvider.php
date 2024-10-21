@@ -35,15 +35,17 @@ class ComposerServiceProvider extends ServiceProvider
 
         View::composer('backend.includes.header', function ($view) {
 
-            $no_deliver_order = Order::where('delivery_status',0)
-            ->where('created_at','<=', Carbon::today()->subDays(7))
-            ->select('id')
-            ->count();
+            // $no_deliver_order = Order::where('delivery_status',0)
+            // ->where('created_at','<=', Carbon::today()->subDays(7))
+            // ->select('id')
+            // ->count();
+            $no_deliver_order = 0;
 
-            $inactive_product = Product::where('active',0)
-            ->where('created_at','<=', Carbon::today()->subDays(7))
-            ->select('id')
-            ->count();
+            // $inactive_product = Product::where('active',0)
+            // ->where('created_at','<=', Carbon::today()->subDays(7))
+            // ->select('id')
+            // ->count();
+            $inactive_product = 0;
 
             $view->with('inactive_product', $inactive_product)
                 ->with('no_deliver_order', $no_deliver_order);

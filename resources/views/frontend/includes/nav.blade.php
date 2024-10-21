@@ -34,7 +34,7 @@
                             class="nav-link" />
                     </li>
 
-                    @if (config('boilerplate.access.user.registration'))
+                   {{-- @if (config('boilerplate.access.user.registration'))
                         <li class="nav-item">
                             <x-utils.link
                                 :href="route('frontend.auth.first.step.register')"
@@ -43,7 +43,7 @@
                                 class="nav-link" />
 
                         </li>
-                    @endif
+                    @endif  --}}
                 @else
                 @if (!$logged_in_user->confirmation_code  && $logged_in_user->active)
                     <li class="nav-item dropdown">

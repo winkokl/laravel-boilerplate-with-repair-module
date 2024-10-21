@@ -12,9 +12,9 @@
           --form-height:550px;
           --form-width: 900px;
           /*  Sea Green */
-          --left-color: #183F35!important;
+          --left-color: #0c2f55!important;
           /*  Light Blue  */
-          --right-color: #183F35!important;
+          --right-color: #0c2f55!important;
         }
 
         *, *::before, *::after {

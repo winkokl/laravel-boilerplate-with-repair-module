@@ -114,7 +114,7 @@
             @endforeach
         </li>
         @endif
-
+{{--
         <li class="c-sidebar-nav-title">@lang('Basic Setting')</li>
         @foreach(Module::group(1) as $module)
             @if($module->isEnabled() && $module->getPriority() == 0)
@@ -335,7 +335,7 @@
                 </li>
             @endif
         @endforeach
-
+--}}
         <li class="c-sidebar-nav-title">@lang('FEATURES')</li>
         @foreach(Module::group(9) as $module)
             @if($module->isEnabled())

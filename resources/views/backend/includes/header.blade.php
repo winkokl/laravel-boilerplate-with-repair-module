@@ -32,7 +32,7 @@
     </ul>
 
     <ul class="c-header-nav ml-auto mr-5">
-        <li class="c-header-nav-item  dropdown">
+        {{-- <li class="c-header-nav-item  dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
               <i class="fas fa-clipboard-list"></i>
               <span class="badge badge-danger navbar-badge">{{$no_deliver_order}}</span>
@@ -54,7 +54,7 @@
                     <!-- Message End -->
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="{{ route('admin.order.index').'?notification=no_deliver' }}" class="dropdown-item dropdown-footer">See All</a>
+                <a href="#" class="dropdown-item dropdown-footer">See All</a>
             </div>
         </li>
         <li class="c-header-nav-item  dropdown">
@@ -79,7 +79,8 @@
                     <!-- Message End -->
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="{{ route('admin.product.index').'?notification=inactive' }}" class="dropdown-item dropdown-footer">See All</a>
+                
+                <a href="#" class="dropdown-item dropdown-footer">See All</a>
             </div>
         </li>
         <li class="c-header-nav-item  dropdown">
@@ -102,7 +103,7 @@
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item dropdown-footer">See All</a>
             </div>
-        </li>
+        </li> --}}
         <li class="c-header-nav-item dropdown">
             <x-utils.link class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <x-slot name="text">

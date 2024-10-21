@@ -11,7 +11,7 @@ if (! function_exists('appName')) {
      */
     function appName()
     {
-        return config('app.name', 'PADESAR');
+        return config('app.name', 'Welcome');
     }
 }
 
