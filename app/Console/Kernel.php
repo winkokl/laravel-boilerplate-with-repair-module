@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \Modules\RecycleBin\Console\BinCheck::class,
+        \Modules\Customer\Console\InactivateExpiredUsers::class,
     ];
 
     /**
@@ -28,6 +29,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('activitylog:clean')->daily();
+        $schedule->command('customer:inactivate-expired')->everyMinute();
     }
 
     /**

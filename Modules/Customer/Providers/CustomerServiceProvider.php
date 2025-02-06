@@ -4,6 +4,7 @@ namespace Modules\Customer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Customer\Console\InactivateExpiredUsers;
 
 class CustomerServiceProvider extends ServiceProvider
 {
@@ -32,6 +33,9 @@ class CustomerServiceProvider extends ServiceProvider
         if (class_exists('Breadcrumbs')) {
             require __DIR__ . '/../Http/breadcrumbs.php';
         }
+        $this->commands([
+            InactivateExpiredUsers::class,
+        ]);
     }
 
     /**
