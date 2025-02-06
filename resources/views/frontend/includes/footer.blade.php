@@ -17,7 +17,7 @@
 
                   <div class="design">
 
-                    Developed By <a href="http://www.evercrystal.com" targe="_blank">GMBF Group PTE.LTD</a></p>
+                    Developed By <a href="#" targe="_blank">Super C Ko</a></p>
 
                   </div>
 

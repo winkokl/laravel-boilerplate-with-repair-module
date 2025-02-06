@@ -18,8 +18,8 @@
     @stack('after-styles')
     <style type="text/css">
         .navbar,.footer-bottom {
-            /*background-color: #0c2f55!important;*/
-            background-color: #183F35!important;
+            background-color: #0c2f55!important;
+            /* background-color: #183F35!important; */
         }
         .navbar-light .navbar-nav .nav-link {
             color: #fff;

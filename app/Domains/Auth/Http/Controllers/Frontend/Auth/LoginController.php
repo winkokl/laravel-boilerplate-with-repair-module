@@ -50,8 +50,8 @@ class LoginController
 
         $checkDevice = $agent->isMobile() ? 'mobile':'frontend';
 
-        // return view($checkDevice.'.auth.login');
-        return view($checkDevice.'.auth.login-register');
+        return view($checkDevice.'.auth.login');
+        // return view($checkDevice.'.auth.login-register');
             
     }
 

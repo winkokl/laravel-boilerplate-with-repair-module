@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Padesar'),
+    'name' => env('APP_NAME', 'Outline VPN'),
     'meta_keywords' => env('APP_META_KEYWORDS',''),
     'meta_description' => env('APP_META_DESCRIPTION',''),
 
